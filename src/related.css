@@ -1,0 +1,48 @@
+.related_item img {
+  max-width: 200px;
+  height: 200px;
+}
+
+.related_item-content {
+  font-family: "Noto Serif", serif;
+  font-size: 12px;
+}
+
+.related_item {
+  max-width: 250px;
+}
+
+.comment_main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.related {
+  display: none;
+}
+
+@media only screen and (min-width: 640px){
+  .related {
+    display: none;
+  }
+  
+}
+
+@media only screen and (min-width: 768px){
+  .related {
+    display: block;
+  }
+
+  .related_main h2 {
+    font-size: 22px;
+  }
+
+}
+
+@media only screen and (min-width: 1024px){
+  .related_main h2 {
+    font-size: 22px;
+  }
+
+}

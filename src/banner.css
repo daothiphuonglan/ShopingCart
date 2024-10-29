@@ -1,0 +1,100 @@
+.banner {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner_content {
+  position: absolute;
+  top: 25%;
+  font-family: "Noto Serif", serif;
+  color: white;
+  font-size: 10px;
+  max-width: 250px;
+}
+
+@keyframes color-blink {
+  0% { background-color: #5ca346; } 
+  25% { background-color: #34878a; } 
+  50% { background-color: #0000ff; } 
+  75% { background-color: #727229; } 
+  100% { background-color: #a73162; } 
+}
+
+.btn-login {
+  padding: 2px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  animation: color-blink 4s infinite;
+  font-size: 10px;
+  width: 50%;
+  height: 20px;
+  border-radius: 4px;
+}
+
+@media only screen and (min-width: 640px) {
+  .banner_content {
+      font-size: 14px;
+      padding-left: 0px;
+  }
+
+}
+
+@media only screen and (min-width: 768px){
+   .banner_content {
+    font-size: 18px;
+   }
+
+   .btn-login {
+    height: 30px;
+   }
+
+   .banner_content {
+    font-size: 20px;
+    font-size: 24px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+   }
+
+}
+
+@media only screen and (min-width: 1024px){
+  .btn-login {
+    height: 40px;
+   }
+
+   .banner_content {
+    font-size: 20px;
+    font-size: 26px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+   }
+
+   .btn-login {
+     font-size: 18px;
+   }
+
+}
+
+@media only screen and (min-width: 1280px) {
+  .btn-login {
+    height: 40px;
+   }
+
+   .banner_content {
+    font-size: 26px;
+   }
+
+}
+
